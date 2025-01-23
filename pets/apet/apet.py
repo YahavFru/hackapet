@@ -11,11 +11,11 @@ display = PyGameDisplay(width=128, height=128)
 splash = displayio.Group()
 display.show(splash)
 
-forest_background = displayio.OnDiskBitmap("forestbackground.bmp")
+forest_background = displayio.OnDiskBitmap("C:/Users/fruya/hackapet/pets/apet/pondBackground.bmp")
 bg_sprite = displayio.TileGrid(forest_background, pixel_shader=forest_background.pixel_shader)
 splash.append(bg_sprite)
 
-cat_sheet = displayio.OnDiskBitmap("cat-Sheet.bmp")
+cat_sheet = displayio.OnDiskBitmap("C:/Users/fruya/hackapet/pets/apet/cat-Sheet.bmp")
 
 tile_width = 32
 tile_height = 32
@@ -34,7 +34,7 @@ cat_sprite = displayio.TileGrid(
 
 splash.append(cat_sprite)
 
-fireball_bitmap = displayio.OnDiskBitmap("fireball.bmp")
+fireball_bitmap = displayio.OnDiskBitmap("C:/Users/fruya/hackapet/pets/apet/fireball.bmp")
 
 fireballs = []
 
@@ -62,7 +62,7 @@ def check_collision(sprite1, sprite2):
         sprite1.y + 32 > sprite2.y
     )
 
-death = displayio.OnDiskBitmap("restart.bmp")
+death = displayio.OnDiskBitmap("C:/Users/fruya/hackapet/pets/apet/restart.bmp")
 
 def display_game_over():
     global death_hi
